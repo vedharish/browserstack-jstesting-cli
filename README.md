@@ -5,9 +5,9 @@ Running test using Testem on BrowserStack can be done by following the below ste
 
 Install browserstack-cli
 ------------------------
-Testem depends internally on [browserstack-cli][1] for running the tests.
+Testem depends internally on [browserstack-cli] for running the tests.
 
-Please install and setup [browserstack-cli][1] before continuing. You should see something similar when setting up browserstack-cli.
+Please install and setup [browserstack-cli] before continuing. You should see something similar when setting up browserstack-cli.
 
 	Username: <your-username>
 	Password: <your-api-key/browserstack-password>
@@ -19,7 +19,7 @@ Please install and setup [browserstack-cli][1] before continuing. You should see
 
 Installing testem
 -----------------
-Please install [testem][2]
+Please install [testem] before proceeding.
 
 Running Tests
 -------------
@@ -31,13 +31,13 @@ P.S. All launchers are defined with 'launch_in_ci'. You will probably want to ed
 
 ### Attribution
 
-Most of the code in this repo is taken from samples in [testem][2] repository.
+Most of the code in this repo is taken from samples in [testem] repository.
 
 
 ## Issues
-If you are getting any errors with the tunnel setup. Then try downloading the [jar][3] again and placing it in <your-home-directory>/.browserstack location.
+If you are getting any errors with the tunnel setup. Then try downloading the [jar] again and placing it in <your-home-directory>/.browserstack location.
 
 
-[1] https://github.com/dbrans/browserstack-cli
-[2] https://github.com/airportyh/testem
-[3] http://www.browserstack.com/BrowserStackTunnel.jar
+[browserstack-cli]: https://github.com/dbrans/browserstack-cli
+[testem]: https://github.com/airportyh/testem
+[jar]: http://www.browserstack.com/BrowserStackTunnel.jar
