@@ -35,7 +35,7 @@ Most of the code in this repo is taken from samples in [testem] repository.
 
 
 ## Issues
-If you are getting any errors with the tunnel setup. Then try downloading the [jar] again and placing it in <your-home-directory>/.browserstack location.
+If you are getting any errors with the tunnel setup. Then try downloading the [jar] again and placing it in `<your-home-directory>/.browserstack` location.
 
 
 [browserstack-cli]: https://github.com/dbrans/browserstack-cli
