@@ -1,7 +1,7 @@
 Testem integration with BrowserStack
 ====================================
 
-Running test using Testem on BrowserStack can be done by following the below steps:
+Running test using Testem on BrowserStack can be done by cloning this repo and following the below steps:
 
 Install browserstack-cli
 ------------------------
