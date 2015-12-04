@@ -1,4 +1,4 @@
-BrowserStack Integration
+Testem with BrowserStack
 ========================
 
 Run your tests on various browsers hosted on Browserstack!
