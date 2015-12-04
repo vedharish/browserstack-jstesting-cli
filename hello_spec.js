@@ -1,8 +1,8 @@
 describe('hello', function(){
     it('should say hello', function(){
-        expect(hello()).to.be('hello world');
+        expect(hello()).toBe('hello world');
     });
     it('should say hello to person', function(){
-        expect(hello('Bob')).to.be('hello Bob');
+        expect(hello('Bob')).toBe('hello Bob');
     });
 });

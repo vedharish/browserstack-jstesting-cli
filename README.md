@@ -1,43 +1,14 @@
-Testem integration with BrowserStack
-====================================
+BrowserStack Integration
+========================
 
-Running test using Testem on BrowserStack can be done by cloning this repo and following the below steps:
+Run your tests on various browsers hosted on Browserstack!
 
-Install browserstack-cli
-------------------------
-Testem depends internally on [browserstack-cli] for running the tests.
+Instructions
+------------
 
-Please install and setup [browserstack-cli] before continuing. You should see something similar when setting up browserstack-cli.
+1. Get a [BrowserStack](browserstack.com) account.
+2. For BrowserStack Authentication export the environment variables for the username and access key of your BrowserStack account. These can be found on the automate accounts page on [BrowserStack](https://www.browserstack.com/accounts/automate) `export BROWSERSTACK_USERNAME=<browserstack-username> && export BROWSERSTACK_KEY=<browserstack-access-key>`
+3. Install the dependencies by running `npm install browserstack browserstacktunnel-wrapper`
+4. Run the command `testem ci -l bs_chrome` to test out the setup with just the Chrome browser hosted BrowserStack.
+5. Run `testem ci` to run it on all the listed browsers - see `testem launchers` for the full list.
 
-	Username: <your-username>
-	Password: <your-api-key/browserstack-password>
-	Tunnel private key (see while logged in http://www.browserstack.com/local-testing): <your-tunnel-key>
-	Tunnel API key (see while logged in http://www.browserstack.com/automated-browser-testing-api#automated-local-testing): <your-api-key>
-	Wrote <your-home-directory>/.browserstack/browserstack.json
-
-	Downloading BrowserStackTunnel.jar [===================] 100%
-
-Installing testem
------------------
-Please install [testem] before proceeding.
-
-Running Tests
--------------
-From the root of this repository run:
-
-	testem ci -l bs_chrome
-
-P.S. All launchers are defined with 'launch_in_ci'. You will probably want to edit the testem.yml.
-
-### Attribution
-
-Most of the code in this repo is taken from samples in [testem] repository.
-
-
-## Issues
-If you are getting any errors with the tunnel setup. Then try downloading the [jar] again and placing it in `<your-home-directory>/.browserstack` location.
-
-
-[browserstack-cli]: https://github.com/dbrans/browserstack-cli
-[testem]: https://github.com/airportyh/testem
-[jar]: http://www.browserstack.com/BrowserStackTunnel.jar
