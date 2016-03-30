@@ -17,7 +17,7 @@
   ],
   "bin": {
     "start-BrowserStackLocal": "./start-BrowserStackLocal.js",
-    "stop-BrowserStackLocal": "./start-BrowserStackLocal.js",
+    "stop-BrowserStackLocal": "./stop-BrowserStackLocal.js",
     "run_on_browserstack": "./run_on_browserstack.js"
   },
   "author": "Tobias Witt <tobias.witt@hhu.de>",
