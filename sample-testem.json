@@ -1,0 +1,58 @@
+{
+  "framework": "jasmine",
+  "parallel": 5,
+  "on_start": "start-BrowserStackLocal async",
+  "on_exit": "stop-BrowserStackLocal",
+  "launchers": {
+    "bs_opera": {
+      "command": "run_on_browserstack --os Windows --os_version 10 --browser opera --browser_version latest --url <url>",
+      "protocol": "browser"
+    },
+
+    "bs_firefox": {
+      "command": "run_on_browserstack --os Windows --os_version 10 --browser firefox --browser_version latest --url <url>",
+      "protocol": "browser"
+    },
+
+    "bs_chrome": {
+      "command": "run_on_browserstack --os 'OS X' --os_version 'El Capitan' --browser chrome --browser_version latest --url <url>",
+      "protocol": "browser"
+    },
+
+    "bs_safari_71": {
+      "command": "run_on_browserstack --os 'OS X' --os_version Mavericks --browser safari --browser_version 7.1 --url <url>",
+      "protocol": "browser"
+    },
+
+    "bs_safari_51": {
+      "command": "run_on_browserstack --os 'OS X' --os_version 'Snow Leopard' --browser safari --browser_version 5.1 --url <url>",
+      "protocol": "browser"
+    },
+
+    "bs_ie_11": {
+      "command": "run_on_browserstack --os Windows --os_version 10 --browser ie --browser_version 11.0 --url <url>",
+      "protocol": "browser"
+    },
+
+    "bs_ie_9": {
+      "command": "run_on_browserstack --os Windows --os_version 7 --browser ie --browser_version 9.0 --url <url>",
+      "protocol": "browser"
+    },
+
+    "bs_ie_8": {
+      "command": "run_on_browserstack --os Windows --os_version 7 --browser ie --browser_version 8.0 --url <url>",
+      "protocol": "browser"
+    }
+  },
+  "launch_in_dev": [],
+  "launch_in_ci": [
+    "bs_opera",
+    "bs_chrome",
+    "bs_firefox",
+    "bs_safari_71",
+    "bs_safari_51",
+    "bs_ie_11",
+    "bs_ie_9",
+    "bs_ie_8"
+  ]
+}
