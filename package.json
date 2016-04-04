@@ -1,6 +1,6 @@
 {
   "name": "browserstack-jstesting-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Command Line tools to start/stop BrowserStackLocal and to launch a browser instance on BrowserStack for js-testing",
   "bin": {
     "start-BrowserStackLocal": "./start-BrowserStackLocal.js",
