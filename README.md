@@ -7,7 +7,7 @@ Instructions
 ------------
 
 1. Get a [BrowserStack] account.
-2. Install this package `npm install -g browserstack-testem-integration`
+2. Install this package `npm install -g browserstack-jstesting-cli`
 3. This package provides 3 binaries:
   - start-BrowserStackLocal : This starts the [BrowserStackLocal Binary] on the local machine.
   - run_on_browserstack     : This starts a browser instance on BrowserStack.
