@@ -1,35 +1,35 @@
 {
-  "name": "browserstack-testem-integration",
+  "name": "browserstack-jstesting-cli",
   "version": "1.0.0",
-  "description": "Helps integrating browserstack with your testem configuration",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ohcibi/browserstack-testem-integration.git"
-  },
-  "keywords": [
-    "browserstack",
-    "testem",
-    "ci"
-  ],
+  "description": "Command Line tools to start/stop BrowserStackLocal and to launch a browser instance on BrowserStack for js-testing",
   "bin": {
     "start-BrowserStackLocal": "./start-BrowserStackLocal.js",
     "stop-BrowserStackLocal": "./stop-BrowserStackLocal.js",
     "run_on_browserstack": "./run_on_browserstack.js"
   },
-  "author": "Tobias Witt <tobias.witt@hhu.de>",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vedharish/browserstack-jstesting-cli.git"
+  },
+  "keywords": [
+    "BrowserStack",
+    "jstesting",
+    "testem",
+    "BrowserStackLocal"
+  ],
+  "author": "Harish Ved <ved.harish3@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ohcibi/browserstack-testem-integration/issues"
+    "url": "https://github.com/vedharish/browserstack-jstesting-cli/issues"
   },
-  "homepage": "https://github.com/ohcibi/browserstack-testem-integration#readme",
   "dependencies": {
     "browserstack": "^1.3.0",
     "browserstacktunnel-wrapper": "^1.4.2",
     "minimist": "^1.2.0",
     "npmlog": "^2.0.3"
-  }
+  },
+  "homepage": "https://github.com/vedharish/browserstack-jstesting-cli#readme"
 }
